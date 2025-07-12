@@ -5,9 +5,9 @@ if x > 0:
 
 age = 16
 if age <= 18:
-    print("you baned")
+    print("you are banned")
 else:
-    print("you are not baned")
+    print("you are not banned")
 
 
 grade = 90
