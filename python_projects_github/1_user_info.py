@@ -1,19 +1,21 @@
-name = input("enter your name:")
-print("your nickname is", name.capitalize())
-username = input("enter your username:")
-print("your username is", username.capitalize())
-number = input("enter your number:")
+first_name = input("enter your first name:") # lets you input your first name
+print("your first name is ", first_name.capitalize()) # outputs a string and a variable first_name but capitalized
 
-number = number
-nickname = name.capitalize()
-username = username.capitalize()
+surname = input("enter your surname:") # lets you input your surname
+print("your surname is ", surname.capitalize()) # outputs a string and a variable surname but capitalized
+
+phone_number = input("enter your phone number:") # lets you input a phone number
+print('your number is ', phone_number) # outputs a string and a variable phonenumber
+
+first_name = name.capitalize()
+surname = username.capitalize()
+# ↑↑↑ Capitalizing variables first_name and surname as shown above
+
+def hello(firstname, surname): # defines a function hello
+    print("hello world".capitalize())  # capitalizes value "hello world"
+    print(f"Hi, {firstname} {surname}") # outputs a string "Hi, " with variables first_name and surname injected in the string
 
 
-def hello(nickname, username):
-    print("hello world".capitalize())  # перетворюємо рядок на великі літери
-    print(f"Hi, {nickname} {username}")
+hello(firstname, surname) # calls the function hello
 
 
-hello(nickname, username)
-
-print('your number is', number)
