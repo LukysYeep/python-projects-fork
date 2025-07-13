@@ -1,28 +1,28 @@
-choice = input("Enter your choice (додати, відняти, помножити, поділити): ")
+choice = input("Enter your choice (sum, subtract, division, multiplication): ")
 number1 = float(input("Enter first number: "))
 number2 = float(input("Enter second number: "))
 
-if choice == "додати":
+if choice == "sum":
     result = number1 + number2
-    print("Сума:", result)
+    print("Result:", result)
 
-elif choice == "відняти":
+elif choice == "subtract":
     result = number1 - number2
-    print("Різниця:", result)
+    print("Result:", result)
 
-elif choice == "помножити":
+elif choice == "multiplication":
     result = number1 * number2
-    print("Множення:", result)
+    print("Result:", result)
 
-elif choice == "поділити":
+elif choice == "divison":
     if number2 == 0:
-        print("На 0 не ділиться!")
+        print("Can't divide by 0!")
     else:
         result = number1 / number2
-        print("Ділення:", result)
+        print("Result:", result)
 
 else:
-    print("Невірний вибір!")
+    print("Invalid selection!")
 
 if 'result' in locals():
-    print("Результат:", result)
+    print("Result:", result)
